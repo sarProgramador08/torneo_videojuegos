@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Navbar = () => {
+  /* Lógica de Javascript */
   return (
+    /* Estructura del HTML (Elementos visuales de la web) */
     <div className='text-white' >
-      Barra de navegación
+      <h1>Barra</h1>
     </div>
   )
 }
