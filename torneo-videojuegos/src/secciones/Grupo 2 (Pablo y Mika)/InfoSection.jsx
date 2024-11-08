@@ -1,8 +1,9 @@
 import React from 'react'
 
 const InfoSection = () => {
+  
   return (
-    <div className='text-white' >
+    <div className='text-center' >
       InfoSection
     </div>
   )
