@@ -13,10 +13,9 @@ import FooterSection from './secciones/Grupo 1 (Damián y Carla)/FooterSection';
 
 
 function App() {
-  
+
   return (
-    <>
-      <Navbar />
+    <div className='overflow-x-hidden'>
       <PresentationSection />
       <InfoSection />
       <RulesSection />
@@ -25,7 +24,7 @@ function App() {
       <ContactSection />
       <GallerySection />
       <FooterSection />
-    </>
+    </div>
   )
 }
 
