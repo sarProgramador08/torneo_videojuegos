@@ -3,7 +3,7 @@ import React from 'react'
 const RulesSection = () => {
   return (
     <div className='text-white' >
-      RulesSection
+    {/*   RulesSection */}
     </div>
   )
 }

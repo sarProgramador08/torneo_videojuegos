@@ -3,7 +3,7 @@ import React from 'react'
 const ContactSection = () => {
   return (
     <div className='text-white' >
-      ContactSection
+      {/* ContactSection */}
     </div>
   )
 }
