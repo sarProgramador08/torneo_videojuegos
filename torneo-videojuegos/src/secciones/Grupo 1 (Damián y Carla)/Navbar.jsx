@@ -5,6 +5,7 @@ import burgerMenuIcon from '../../assets/SVG/burgerMenuIcon.svg';
 import crossMenuIcon from '../../assets/SVG/crossMenuIcon.svg';
 import Headroom from 'react-headroom';
 
+
 const Navbar = () => {
   const [navbarPin, setNavbarPin] = useState(false);
   const [sideMenu, setSideMenu] = useState(false);
