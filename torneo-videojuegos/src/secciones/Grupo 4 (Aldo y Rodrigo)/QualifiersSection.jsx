@@ -3,7 +3,7 @@ import React from 'react'
 const QualifiersSection = () => {
   return (
     <div className='text-white' >
-      QualifiersSection
+      {/* QualifiersSection */}
     </div>
   )
 }
