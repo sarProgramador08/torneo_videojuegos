@@ -1,4 +1,7 @@
 import React from 'react'
+import imagen1 from '../../assets/Imágenes/sarmientoGaming.png'
+import imagenFree from '../../assets/Imágenes/FreeFire_Circle_Icon.png'
+
 
 const InfoSection = () => {
   
@@ -8,7 +11,7 @@ const InfoSection = () => {
       const <img src="" alt="redondo morado" />
       <h2 className='text-xl font-black text-left text-white'>¿Que es Sarmiento Gaming?</h2>
        <p className='text-sm font-light text-left text-white'>Sarmiento Gaming es un torneo (presencial) de videojuegos creado por alumnos de la Escuela Profesional Sarmiento de la oferta formativa programador turno mañana 2024, para estudiantes de la institución interesados. Se realizará el Lunes 11 y Martes 12 de noviembre de 2024 en horario de 9:00 a 11:45.</p>
-      const <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPi6UtOI-wn2GocXpVF-F78BbVoMYft6C2T9LklfSm-Y8B-yH06IQ0WW6k__piZ6_jB_wFOmtVgCdAT9v1YoVJMWNq5stMYd-_AxCvlipTkJXc=w1263-h593" alt="imagen del logo" />
+      const <img src={imagen1} alt="imagen del logo" />
      </div>
      <div> {/* normas */}
       const <img src="" alt="redondo morado" />
@@ -21,7 +24,7 @@ const InfoSection = () => {
       {/* todos los h3 son los juegos */}
        <h3 className='text-lg font-bold text-right text-white'>free fire(mobile)</h3>
         <p className='text-sm font-medium text-right text-[#58FCEC]'>Free Fire es un juego de batalla real desarrollado por Garena, donde los jugadores se lanzan en paracaídas a una isla desierta, buscando armas y suministros para sobrevivir. Los jugadores deben eliminar a los demás mientras el área de juego se va reduciendo, obligándolos a enfrentarse. El último jugador o equipo en pie gana la partida. Con un estilo de juego rápido y dinámico, Free Fire ofrece diversas modalidades y personajes, cada uno con habilidades únicas.</p>
-       const <img src="" alt="imagen free fire" />
+       const <img src={imagenFree} alt="imagen free fire" />
        <h3 className='text-lg font-bold text-left text-white'>Counter-Strike 1.6 No Steam(PC)</h3>
         <p className='text-sm font-medium text-left text-[#58FCEC]'>Counter-Strike es un clásico juego de disparos en primera persona (FPS) que se centra en el combate en equipo. Los jugadores se dividen en dos equipos: los terroristas (T) y los antiterroristas (CT). Cada equipo tiene objetivos específicos, como colocar o desactivar una bomba o rescatar rehenes. El juego destaca por su enfoque táctico, estrategia en equipo y un sistema de economía que permite a los jugadores comprar armas y equipo entre rondas. </p>
        const <img src="" alt="imagen counter strike" />
