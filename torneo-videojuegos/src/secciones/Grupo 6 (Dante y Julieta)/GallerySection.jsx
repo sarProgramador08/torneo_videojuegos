@@ -1,11 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Imagen1 from '../../assets/Imágenes/imagen1.jpg'
+import Imagen2 from '../../assets/Imágenes/imagen2.jpg'
+import Imagen3 from '../../assets/Imágenes/imagen3.jpg'
+import Imagen4 from '../../assets/Imágenes/imagen4.jpg'
+import Imagen5 from '../../assets/Imágenes/imagen5.jpg'
+import Imagen6 from '../../assets/Imágenes/imagen6.jpg'
+import Imagen7 from '../../assets/Imágenes/imagen7.jpg'
+import Imagen8 from '../../assets/Imágenes/imagen8.jpg'
+import Imagen9 from '../../assets/Imágenes/imagen9.jpg'
+import Imagen10 from '../../assets/Imágenes/imagen10.jpg'
+import Imagen11 from '../../assets/Imágenes/imagen11.jpg'
+import Imagen12 from '../../assets/Imágenes/imagen12.jpg'
+import Imagen13 from '../../assets/Imágenes/imagen13.jpg'
+import Imagen14 from '../../assets/Imágenes/imagen14.jpg'
 
-const GallerySection = () => {
+
+
+const RulesSection = () => {
   return (
-    <div className='text-white' >
-     {/*  GallerySection */}
-    </div>
-  )
-}
+    <div className="bg-black text-white py-10">
+      <h2 className="text-center text-3xl font-bold mb-6">Exposición y Entrega de Premios</h2>
 
-export default GallerySection
+      {/* Botones de filtro */}
+      <div className="flex justify-center space-x-4 mb-8">
+      </div>
+
+      {/* Grid de imágenes */}
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+        <img className='aspect-auto w-40' src={Imagen1} alt="imagen1" />
+        <img className='aspect-auto w-40' src={Imagen2} alt="imagen2" />
+        <img className='aspect-auto w-40' src={Imagen3} alt="imagen3" />
+        <img className='aspect-auto w-40' src={Imagen4} alt="imagen4" />
+        <img className='aspect-auto w-40' src={Imagen5} alt="imagen5" />
+        <img className='aspect-auto w-40' src={Imagen6} alt="imagen6" />
+        <img className='aspect-auto w-40' src={Imagen7} alt="imagen7" />
+        <img className='aspect-auto w-40' src={Imagen8} alt="imagen8" />
+        <img className='aspect-auto w-40' src={Imagen9} alt="imagen9" />
+        <img className='aspect-auto w-40' src={Imagen10} alt="imagen10" />
+        <img className='aspect-auto w-40' src={Imagen11} alt="imagen11" />
+        <img className='aspect-auto w-40' src={Imagen12} alt="imagen12" />
+        <img className='aspect-auto w-40' src={Imagen13} alt="imagen13" />
+        <img className='aspect-auto w-40' src={Imagen14} alt="imagen14" />
+
+        {/* Efecto de hover con texto */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+          <span className="text-white text-center"></span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RulesSection;
