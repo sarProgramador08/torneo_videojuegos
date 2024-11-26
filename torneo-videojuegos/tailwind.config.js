@@ -14,5 +14,6 @@ export default {
   },
   plugins: [
     require("@designbycode/tailwindcss-text-stroke"),
+    require('daisyui'),
   ],
 }

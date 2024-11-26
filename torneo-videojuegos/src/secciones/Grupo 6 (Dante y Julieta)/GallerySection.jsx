@@ -26,7 +26,7 @@ const RulesSection = () => {
       </div>
 
       {/* Grid de imágenes */}
-      <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+      <div className="grid bg-[#c349fc] gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
         <img className='aspect-auto w-40' src={Imagen1} alt="imagen1" />
         <img className='aspect-auto w-40' src={Imagen2} alt="imagen2" />
         <img className='aspect-auto w-40' src={Imagen3} alt="imagen3" />
@@ -47,6 +47,135 @@ const RulesSection = () => {
           <span className="text-white text-center"></span>
         </div>
       </div>
+
+      <section className='flex flex-col'>
+        {/* Carrusel 1 */}
+        <div className="carousel w-[30%] h-[30%] aspect-auto">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img
+              src={Imagen1}
+              className="w-full" />
+
+            {/* Botones carrusel */}
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              {/* Botón izquierda */}
+              <a href="#slide6" className="btn btn-circle">❮</a>
+              {/* Botón derecha */}
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <img
+              src={Imagen2}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <img
+              src={Imagen3}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" className="btn btn-circle">❮</a>
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <img
+              src={Imagen4}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" className="btn btn-circle">❮</a>
+              <a href="#slide5" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide5" className="carousel-item relative w-full">
+            <img
+              src={Imagen11}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" className="btn btn-circle">❮</a>
+              <a href="#slide6" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide6" className="carousel-item relative w-full">
+            <img
+              src={Imagen12}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide5" className="btn btn-circle">❮</a>
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Carrusel 2 */}
+        <div className="carousel w-[40%] aspect-video">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img
+              src={Imagen5}
+              className="w-full aspect-auto" />
+
+            {/* Botones carrusel */}
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              {/* Botón izquierda */}
+              <a href="#slide6" className="btn btn-circle">❮</a>
+              {/* Botón derecha */}
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <img
+              src={Imagen6}
+              className="w-full aspect-auto" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <img
+              src={Imagen7}
+              className="w-full aspect-auto" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" className="btn btn-circle">❮</a>
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <img
+              src={Imagen8}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" className="btn btn-circle">❮</a>
+              <a href="#slide5" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide5" className="carousel-item relative w-full">
+            <img
+              src={Imagen11}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" className="btn btn-circle">❮</a>
+              <a href="#slide6" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide6" className="carousel-item relative w-full">
+            <img
+              src={Imagen12}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide5" className="btn btn-circle">❮</a>
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 };
