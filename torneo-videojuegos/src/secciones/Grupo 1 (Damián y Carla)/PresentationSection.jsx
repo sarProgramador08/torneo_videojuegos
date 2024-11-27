@@ -46,6 +46,7 @@ const PresentationSection = () => {
               <path d="M567.744 327.428H556.958V338.995H567.744V327.428Z" fill="#58FCEC" />
               <path d="M583.923 327.428H573.136V338.995H583.923V327.428Z" fill="#58FCEC" />
 
+              {/* Botón izquierdo mano izquierda índice*/}
               <motion.path
                 d="M600.102 327.428H589.315V338.995H600.102V327.428Z"
                 fill="#00FFE6"
@@ -53,14 +54,14 @@ const PresentationSection = () => {
                   scale: [0.95, 0.8]
                 }}
                 transition={{
-                  delay: 0.38,
+                  delay: 0.39,
                   duration: 0.76,
                   repeatType: 'loop',
                   repeat: Infinity
                 }}
               />
 
-              {/* Botón índice derecho */}
+              {/* Botón derecho mano izquierda índice*/}
               <motion.path
                 d="M616.28 327.428H605.494V338.995H616.28V327.428Z"
                 fill="#58FCEC"
@@ -68,7 +69,7 @@ const PresentationSection = () => {
                   scale: [0.8, 0.95]
                 }}
                 transition={{
-                  delay: 0.38,
+                  delay: 0.39,
                   duration: 0.76,
                   repeatType: 'loop',
                   repeat: Infinity
@@ -85,7 +86,22 @@ const PresentationSection = () => {
               <path d="M583.923 343.286H556.958V354.852H583.923V343.286Z" fill="#58FCEC" />
               <path d="M600.102 343.286H589.315V354.852H600.102V343.286Z" fill="#58FCEC" />
               <path d="M616.28 343.286H605.494V354.852H616.28V343.286Z" fill="#00FFE6" />
-              <path d="M632.459 343.286H621.673V354.852H632.459V343.286Z" fill="#58FCEC" />
+
+              {/* Botón pulgar izquierdo */}
+              <motion.path
+                d="M632.459 343.286H621.673V354.852H632.459V343.286Z"
+                fill="#58FCEC"
+                animate={{
+                  scale: [0.8, 0.95]
+                }}
+                transition={{
+                  delay: 0.39,
+                  duration: 0.76,
+                  repeatType: 'loop',
+                  repeat: Infinity
+                }}
+              />
+
               <path d="M648.639 343.286H637.853V354.852H648.639V343.286Z" fill="#002421" />
               <path d="M664.819 343.286H654.032V354.852H664.819V343.286Z" fill="#58FCEC" />
               <path d="M680.998 343.286H670.211V354.852H680.998V343.286Z" fill="#58FCEC" />
@@ -110,8 +126,9 @@ const PresentationSection = () => {
               <path d="M729.535 375.001H718.749V386.568H729.535V375.001Z" fill="#58FCEC" />
               <path d="M745.713 375.001H734.928V386.568H745.713V375.001Z" fill="#58FCEC" />
 
+              {/* Mouse */}
               <motion.g
-
+                initial={{ translateX: 0, translateY: 2 }}
                 animate={{
                   rotateZ: [0, 2, -2, 0],
                   originY: 1
@@ -155,7 +172,7 @@ const PresentationSection = () => {
               <path d="M1225 641.202L1177.99 178.275L961.364 102.443L910.518 220.925L930.007 668.699L1225 641.202Z" fill="url(#paint0_linear_472_79)" />
               <path d="M288 641.202L335.009 178.275L551.634 102.443L602.482 220.925L582.993 668.699L288 641.202Z" fill="url(#paint1_linear_472_79)" />
 
-
+              {/* Sombras y luces pc */}
               <motion.g
                 animate={{
                   fill: ["url(#gradPC1)", "url(#gradPC2)", "url(#gradPC3)"] // Animate between gradients
@@ -192,6 +209,7 @@ const PresentationSection = () => {
               <path d="M797.789 322.166L762.027 360.514L780.662 380.497L816.423 342.15C821.569 336.631 821.569 327.685 816.423 322.167C811.278 316.647 802.935 316.647 797.789 322.166Z" fill="black" />
               <path d="M820.283 411.628C820.283 389.507 803.56 371.574 782.931 371.574H756.5H730.069C709.44 371.574 692.717 389.507 692.717 411.628C692.717 411.628 692.428 432.078 694.968 432.078C694.968 408.099 713.094 388.662 735.456 388.662H756.5H777.544C799.904 388.662 818.032 408.099 818.032 432.078C820.572 432.078 820.283 411.628 820.283 411.628Z" fill="#00FFE6" />
 
+              {/* Mano derecha */}
               <motion.g
 
                 animate={{
@@ -207,6 +225,7 @@ const PresentationSection = () => {
               </motion.g>
 
 
+              {/* Brazo derecho */}
               <motion.g
                 animate={{
                   rotateZ: [0, 0.2, -0.2, 0],
@@ -219,6 +238,7 @@ const PresentationSection = () => {
               </motion.g>
               <path d="M883.755 489.497C883.821 489.506 883.887 489.516 883.954 489.526C894.353 491.099 895.466 506.799 885.464 510.231L849.034 522.728C842.83 524.856 836.349 520.141 836.044 513.164C836.039 513.062 836.035 512.961 836.03 512.861C835.789 507.952 838.649 503.486 843.026 502.03L879.532 489.891C880.9 489.435 882.337 489.295 883.755 489.497Z" fill="#2CCDBD" />
 
+              {/* Mano y sombra izquierda */}
               <motion.g
                 animate={{
                   rotateZ: [0, 1.2, -1.2, 0],
@@ -233,6 +253,7 @@ const PresentationSection = () => {
                 <path d="M587.295 372.283C596.785 369.96 606.239 374.239 611.502 382.304C609.933 384.013 608.213 385.57 606.319 386.902L603.3 389.025L581.241 399.432L574.225 389.61C573.273 388.277 572.434 386.868 571.709 385.4C574.713 378.992 580.254 374.007 587.295 372.283Z" fill="#D8AC7E" />
               </motion.g>
 
+              {/* Brazo izquierdo */}
               <motion.g
                 animate={{
                   rotateX: [0, 5, -5, 0],
