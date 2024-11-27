@@ -33,12 +33,12 @@ const Navbar = () => {
         </div>
 
         {/* Texto de la barra de navegación */}
-        <ul className='flex items-center justify-center max-md:hidden text-[#FCFCFC] gap-[1.2vw] font-light mr-[1vw]'>
-          <li><a href="#"><h2 className='font-light hover:font-medium transition-all duration-75 w-[3vw]'>Inicio</h2></a></li>
-          <li><a href="#infoTorneo"><h2 className='font-light hover:font-medium transition-all duration-75 w-[13vw]'>Información del torneo</h2></a></li>
-          <li><a href="#cronograma"><h2 className='font-light hover:font-medium transition-all duration-75 w-[7vw]'>Cronograma</h2></a></li>
-          <li><a href="#puntuaciones"><h2 className='font-light hover:font-medium transition-all duration-75 w-[7vw]'>Puntuaciones</h2></a></li>
-          <li><a href="#contacto"><h2 className='font-light hover:font-medium transition-all duration-75 w-[6vw]'>Contacto</h2></a></li>
+        <ul className='flex items-center justify-end max-md:hidden text-[#FCFCFC] gap-[1.2vw] w-full font-light mr-[1vw]'>
+          <li><a href="#"><h2 className='font-light text-[1.25vw] hover:border-b-[2px] transition-all duration-75 h-[2.2vw] mt-2'>Inicio</h2></a></li>
+          <li><a href="#infoTorneo"><h2 className='font-light text-[1.25vw] hover:border-b-[2px] transition-all duration-75 h-[2.2vw] mt-2'>Información del torneo</h2></a></li>
+          <li><a href="#cronograma"><h2 className='font-light text-[1.25vw] hover:border-b-[2px] transition-all duration-75 h-[2.2vw] mt-2'>Cronograma</h2></a></li>
+          <li><a href="#puntuaciones"><h2 className='font-light text-[1.25vw] hover:border-b-[2px] transition-all duration-75 h-[2.2vw] mt-2'>Puntuaciones</h2></a></li>
+          <li><a href="#contacto"><h2 className='font-light text-[1.25vw] hover:border-b-[2px] transition-all duration-75 h-[2.2vw] mt-2'>Contacto</h2></a></li>
         </ul>
 
         {/* Íconos de menú celular */}
