@@ -11,8 +11,8 @@ import Imagen9 from '../../assets/Imágenes/imagen9.jpg'
 import Imagen10 from '../../assets/Imágenes/imagen10.jpg'
 import Imagen11 from '../../assets/Imágenes/imagen11.jpg'
 import Imagen12 from '../../assets/Imágenes/imagen12.jpg'
-import Imagen13 from '../../assets/Imágenes/imagen13.jpg'
-import Imagen14 from '../../assets/Imágenes/imagen14.jpg'
+
+
 
 
 
@@ -39,8 +39,7 @@ const RulesSection = () => {
         <img className='aspect-auto w-40' src={Imagen10} alt="imagen10" />
         <img className='aspect-auto w-40' src={Imagen11} alt="imagen11" />
         <img className='aspect-auto w-40' src={Imagen12} alt="imagen12" />
-        <img className='aspect-auto w-40' src={Imagen13} alt="imagen13" />
-        <img className='aspect-auto w-40' src={Imagen14} alt="imagen14" />
+       
 
         {/* Efecto de hover con texto */}
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
@@ -94,7 +93,7 @@ const RulesSection = () => {
           </div>
           <div id="slide5" className="carousel-item relative w-full">
             <img
-              src={Imagen11}
+              src={Imagen5}
               className="w-full" />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <a href="#slide4" className="btn btn-circle">❮</a>
@@ -103,7 +102,7 @@ const RulesSection = () => {
           </div>
           <div id="slide6" className="carousel-item relative w-full">
             <img
-              src={Imagen12}
+              src={Imagen6}
               className="w-full" />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <a href="#slide5" className="btn btn-circle">❮</a>
@@ -114,63 +113,63 @@ const RulesSection = () => {
 
         {/* Carrusel 2 */}
         <div className="carousel w-[40%] aspect-video">
-          <div id="slide1" className="carousel-item relative w-full">
+          <div id="slide7" className="carousel-item relative w-full">
             <img
-              src={Imagen5}
+              src={Imagen7}
               className="w-full aspect-auto" />
 
             {/* Botones carrusel */}
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               {/* Botón izquierda */}
-              <a href="#slide6" className="btn btn-circle">❮</a>
+              <a href="#slide12" className="btn btn-circle">❮</a>
               {/* Botón derecha */}
-              <a href="#slide2" className="btn btn-circle">❯</a>
+              <a href="#slide8" className="btn btn-circle">❯</a>
             </div>
 
           </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img
-              src={Imagen6}
-              className="w-full aspect-auto" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" className="btn btn-circle">❮</a>
-              <a href="#slide3" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img
-              src={Imagen7}
-              className="w-full aspect-auto" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" className="btn btn-circle">❮</a>
-              <a href="#slide4" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
+          <div id="slide8" className="carousel-item relative w-full">
             <img
               src={Imagen8}
-              className="w-full" />
+              className="w-full aspect-auto" />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" className="btn btn-circle">❮</a>
-              <a href="#slide5" className="btn btn-circle">❯</a>
+              <a href="#slide7" className="btn btn-circle">❮</a>
+              <a href="#slide9" className="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide5" className="carousel-item relative w-full">
+          <div id="slide9" className="carousel-item relative w-full">
+            <img
+              src={Imagen9}
+              className="w-full aspect-auto" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide8" className="btn btn-circle">❮</a>
+              <a href="#slide10" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide10" className="carousel-item relative w-full">
+            <img
+              src={Imagen10}
+              className="w-full" />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide9" className="btn btn-circle">❮</a>
+              <a href="#slide11" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide11" className="carousel-item relative w-full">
             <img
               src={Imagen11}
               className="w-full" />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" className="btn btn-circle">❮</a>
-              <a href="#slide6" className="btn btn-circle">❯</a>
+              <a href="#slide10" className="btn btn-circle">❮</a>
+              <a href="#slide12" className="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide6" className="carousel-item relative w-full">
+          <div id="slide12" className="carousel-item relative w-full">
             <img
               src={Imagen12}
               className="w-full" />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide5" className="btn btn-circle">❮</a>
-              <a href="#slide1" className="btn btn-circle">❯</a>
+              <a href="#slide11" className="btn btn-circle">❮</a>
+              <a href="#slide7" className="btn btn-circle">❯</a>
             </div>
           </div>
 
