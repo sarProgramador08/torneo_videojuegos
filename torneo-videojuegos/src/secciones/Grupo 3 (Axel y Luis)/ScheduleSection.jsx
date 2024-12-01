@@ -2,7 +2,7 @@ import React from 'react'
 
 const ScheduleSection = () => {
   return (
-    <div className='text-white' >
+    <div className='text-white h-96' >
       {/* ScheduleSection */}
     </div>
   )
