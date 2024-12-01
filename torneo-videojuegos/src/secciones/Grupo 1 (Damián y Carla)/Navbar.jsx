@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LogoImage from '../../assets/Imágenes/sarmientoGaming.png';
+import LogoImage from '../../assets/Imágenes/sarmientoGaming.svg';
 import SarmientoGamingTextIcon from '../../assets/SVG/Sarmiento Gaming.svg';
 import burgerMenuIcon from '../../assets/SVG/burgerMenuIcon.svg';
 import crossMenuIcon from '../../assets/SVG/crossMenuIcon.svg';
@@ -20,15 +20,15 @@ const Navbar = () => {
     /* Estructura del HTML (Elementos visuales de la web) */
     <Headroom onPin={handlePin} onUnfix={handleUnpin} downTolerance={20} upTolerance={10} pinStart={100}>
       {/* Contenedor de la barra de navegación */}
-      <div className={`h-[4vw] w-[100vw] flex items-center justify-between py-[4%] px-[2vw] ${navbarPin ? 'bg-[#061514]' : ''}`} >
+      <div className={`max-md:h-fit max-md:pt-[8vw] max-md:px-[5vw] h-[4vw] w-[100vw] flex items-center justify-between py-[4%] px-[2vw] ${navbarPin ? 'bg-[#061514]' : ''}`} >
         {/* Contenedor del logo y texto de la barra de navegación */}
-        <div className='flex items-center gap-[1.5vw]'>
+        <div className='flex items-center gap-[1.5vw] max-md:gap-[2vw]'>
           <a href="#">
-            <img className='w-[5vw] hover:[filter:drop-shadow(0px_6px_10px_#00E3CD);] hover:shadow-emerald-300' src={LogoImage} alt="" />
+            <img className='max-md:w-[12vw] w-[5vw] hover:[filter:drop-shadow(0px_6px_10px_#00E3CD);] hover:shadow-emerald-300' src={LogoImage} alt="" />
           </a>
           {/* Texto del logo */}
           <a href="#">
-            <img className='w-[20vw] hover:[filter:drop-shadow(0px_1px_2px_#00E3CD);]' src={SarmientoGamingTextIcon} alt="" />
+            <img className='max-md:w-[58vw] w-[20vw] hover:[filter:drop-shadow(0px_1px_2px_#00E3CD);]' src={SarmientoGamingTextIcon} alt="" />
           </a>
         </div>
 
@@ -46,18 +46,18 @@ const Navbar = () => {
           <div className='bg-none w-fit h-fit flex items-center justify-center' >
             {/* Ícono de hamburguesa menú */}
             <button onClick={handleSideMenu} >
-              <img className={`ml-[3vw] z-10 absolute top-[1.5vw] right-[2.5vw] w-[5vw] ${sideMenu ? 'hidden' : 'block'}`} src={burgerMenuIcon} alt="Menú desplegable" />
+              <img className={`max-md:top-[10.8vw] max-md:right-[6vw] max-md:w-[7vw] ml-[3vw] z-10 absolute top-[1.5vw] right-[2.5vw] w-[5vw] ${sideMenu ? 'hidden' : 'block'}`} src={burgerMenuIcon} alt="Menú desplegable" />
             </button>
             {/* Ícono equis menú */}
             <button onClick={handleSideMenu} >
-              <img className={`ml-[3vw] z-10 absolute top-[1.5vw] right-[2.5vw] w-[5vw] ${sideMenu ? 'block' : 'hidden'}`} src={crossMenuIcon} alt="Cerrar menú" />
+              <img className={`top-[10.8vw] right-[6vw] bg-[#061514] rounded w-[8vw] ml-[3vw] z-10 absolute ${sideMenu ? 'block' : 'hidden'}`} src={crossMenuIcon} alt="Cerrar menú" />
             </button>
           </div>
           {sideMenu ? (
             /* Contenido del menú lateral */
-            <div className='bg-[#061514] absolute z-0 top-0 right-0 h-lvh w-[40vw] transition-opacity duration-300 ease-in-out' >
-              <h2 className='font-Inter border-b-[0.28vw] border-b-white pb-[1.5vw] text-[#FCFCFC] font-semibold mt-[2.1vw]' >Navegación</h2>
-              <ul className='flex flex-col mt-[3vw] text-[#FCFCFC] gap-[1.5vw] font-light mr-[1vw]'>
+            <div className='bg-[#061514] absolute z-0 top-0 right-0 h-lvh w-fit transition-opacity duration-300 ease-in-out mr-[17vw]' >
+              <h2 className='font-Inter border-b-[0.28vw] border-b-white pb-[1.5vw] text-[#FCFCFC] font-semibold mt-[10.1vw] mr-[0vw]'>Navegación</h2>
+              <ul className='flex flex-col mt-[3vw] text-[#FCFCFC] text-[4vw] gap-[4vw] font-light mr-[0vw]'>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#infoTorneo">Información del torneo</a></li>
                 <li><a href="#cronograma">Cronograma</a></li>
