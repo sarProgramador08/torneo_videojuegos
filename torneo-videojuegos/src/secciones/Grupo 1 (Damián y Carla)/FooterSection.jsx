@@ -12,7 +12,7 @@
   const FooterSection = () => {
     return (
       /* Contenedor principal de la sección footer */
-      <footer id='contacto' className='max-md:justify-center max-md:h-fit max-md:border-t-gray-900 max-md:border-[0.2vw] max-md:py-[20vw] text-white flex flex-col items-center justify-start pt-[4vw] h-[20vw] text-center bg-white bg-gradient-to-b from-black from-10% via-[#001e1b] via-30% to-[#00c0ad] to-100%' >
+      <footer id='contacto' className='max-md:justify-center max-md:h-fit max-md:border-transparent max-md:border-t-gray-900  max-md:border-[0.2vw] max-md:py-[20vw] text-white flex flex-col items-center justify-start pt-[4vw] h-[20vw] text-center bg-white bg-gradient-to-b from-black from-10% via-[#001e1b] via-30% to-[#00c0ad] to-100%' >
 
         {/* Contenedor Logo */}
         <div className='flex flex-col items-center gap-[0.4vw] max-md:gap-[3vw]'>
