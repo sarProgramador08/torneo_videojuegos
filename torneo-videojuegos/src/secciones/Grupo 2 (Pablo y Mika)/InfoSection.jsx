@@ -22,11 +22,12 @@ function InfoSection() {
       </div> {/* parte de todos los juegos */}
       <div>
         <h1 className='text-2xl font-mono text-center text-white'>Juegos en los que se participa</h1>
-        {/* imagenes de cada juego antes de sus respectivos nombres */}
         {/* todos los h3 son los juegos */}
         <h3 className='text-lg font-bold text-right text-white'>free fire(mobile)</h3>
-        <p className='text-sm font-medium text-right text-[#58FCEC]'>Free Fire es un juego de batalla real desarrollado por Garena, donde los jugadores se lanzan en paracaídas a una isla desierta, buscando armas y suministros para sobrevivir. Los jugadores deben eliminar a los demás mientras el área de juego se va reduciendo, obligándolos a enfrentarse. El último jugador o equipo en pie gana la partida. Con un estilo de juego rápido y dinámico, Free Fire ofrece diversas modalidades y personajes, cada uno con habilidades únicas.</p>
-        <img src={imagenFree} alt="imagen free fire" />
+        <div className='contenedor' style={{display: 'flex', alignItems: 'center'}}>
+         <img src={imagenFree} alt="imagen free fire" style={{width: '25%', marginLeft: '5%'}}/>
+         <p className='text-sm font-medium text-right text-[#58FCEC]' style={{flex: '1', width: '10px', height: '200px', border: '2px solid black', padding: '10px', overflow: 'hidden' }}>Free Fire es un juego de batalla real desarrollado por Garena, donde los jugadores se lanzan en paracaídas a una isla desierta, buscando armas y suministros para sobrevivir. Los jugadores deben eliminar a los demás mientras el área de juego se va reduciendo, obligándolos a enfrentarse. El último jugador o equipo en pie gana la partida. Con un estilo de juego rápido y dinámico, Free Fire ofrece diversas modalidades y personajes, cada uno con habilidades únicas.</p>
+        </div>
         <h3 className='text-lg font-bold text-left text-white'>Counter-Strike 1.6 No Steam(PC)</h3>
         <p className='text-sm font-medium text-left text-[#58FCEC]'>Counter-Strike es un clásico juego de disparos en primera persona (FPS) que se centra en el combate en equipo. Los jugadores se dividen en dos equipos: los terroristas (T) y los antiterroristas (CT). Cada equipo tiene objetivos específicos, como colocar o desactivar una bomba o rescatar rehenes. El juego destaca por su enfoque táctico, estrategia en equipo y un sistema de economía que permite a los jugadores comprar armas y equipo entre rondas. </p>
         <img src={imagenCounter} alt="imagen conter strike" />
